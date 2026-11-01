@@ -124,7 +124,6 @@ export function InsidePlanner() {
                   <img
                     src={section.image.url}
                     alt={section.alt}
-                    loading="lazy"
                     className="w-full rounded-[4px]"
                   />
                 </div>

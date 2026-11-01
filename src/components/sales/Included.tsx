@@ -37,7 +37,6 @@ export function Included() {
                 <img
                   src={coverImg.url}
                   alt="The Calm Christmas Planner cover"
-                  loading="lazy"
                   className="w-full"
                 />
               </div>
