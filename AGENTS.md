@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Architecture
+- The sales page is a single landing page at `/` built from sections in `src/components/sales/*` (Hero, Story, InsidePlanner, December, Included, Close); shared CTA/pricing constants live in `src/components/sales/checkout.tsx`.

@@ -45,7 +45,7 @@ export function Hero() {
           hosting — so December can feel like Christmas again.
         </p>
 
-        <div className="relative z-10 mt-10">
+        <div className="relative z-10 mt-10 hidden sm:block">
           <span className="ribbon eyebrow text-xs sm:text-sm">
             Budget &amp; Hosting Planner
           </span>
