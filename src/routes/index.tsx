@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/sales/Hero";
 import { Story } from "@/components/sales/Story";
 import { InsidePlanner } from "@/components/sales/InsidePlanner";
+import { PlanTool } from "@/components/sales/PlanTool";
 import { December } from "@/components/sales/December";
 import { Included } from "@/components/sales/Included";
 import { Close } from "@/components/sales/Close";
@@ -39,6 +40,7 @@ function SalesPage() {
       <Hero />
       <Story />
       <InsidePlanner />
+      <PlanTool />
       <December />
       <Included />
       <Close />
