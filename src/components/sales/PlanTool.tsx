@@ -49,8 +49,10 @@ export function PlanTool() {
     event.preventDefault();
     setStatus("loading");
     setError("");
+    void track("plan_submitted");
     try {
       const result = await generate({ data: { situation, budget, stress } });
+      void track("plan_generated");
       setPlan(result);
       setStatus("done");
     } catch (caught) {
