@@ -1,3 +1,5 @@
+import { track } from "@/lib/analytics.functions";
+
 export const CHECKOUT_URL = "https://twpub.gumroad.com/l/christmasplanner";
 
 export const PRICE = "$12.99";
