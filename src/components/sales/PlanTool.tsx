@@ -1,6 +1,7 @@
 import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useState } from "react";
 import { generateCalmPlan, type CalmPlan } from "@/lib/planner.functions";
+import { track } from "@/lib/analytics.functions";
 import { PrimaryCta } from "./checkout";
 import { Ornament } from "./Ornament";
 
