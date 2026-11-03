@@ -1,3 +1,5 @@
+import { track } from "@/lib/analytics.functions";
+
 export const CHECKOUT_URL = "https://twpub.gumroad.com/l/christmasplanner";
 
 export const PRICE = "$12.99";
@@ -14,6 +16,9 @@ export function PrimaryCta({
       href={CHECKOUT_URL}
       target="_blank"
       rel="noreferrer"
+      onClick={() => {
+        void track("gumroad_click");
+      }}
       className={`inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 font-body text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground shadow-lg shadow-berry/30 transition-all hover:-translate-y-0.5 hover:bg-berry-deep hover:shadow-xl hover:shadow-berry/40 ${className}`}
     >
       {label}
