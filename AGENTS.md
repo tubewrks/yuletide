@@ -11,3 +11,4 @@
 
 ## Architecture
 - The sales page is a single landing page at `/` built from sections in `src/components/sales/*` (Hero, Story, InsidePlanner, December, Included, Close); shared CTA/pricing constants live in `src/components/sales/checkout.tsx`.
+- The AI plan feature calls the Lovable AI Gateway from `src/lib/planner.functions.ts` via the server-only helper `src/lib/ai/gateway.server.ts` (Responses endpoint, final text consumed server-side); never import the `.server` module from client code, and keep prompts server-side.
