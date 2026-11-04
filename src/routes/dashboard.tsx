@@ -120,7 +120,7 @@ function DashboardPage() {
               {CARDS.map((card) => (
                 <div key={card.key} className="page-card rounded-xl p-6">
                   <p className={`eyebrow ${card.color}`}>{card.label}</p>
-                  <p className="mt-3 font-display text-5xl font-semibold text-evergreen">
+                  <p className="mt-3 font-body text-5xl font-bold tracking-tight text-evergreen">
                     {stats.totals[card.key].toLocaleString()}
                   </p>
                   <p className="mt-2 text-xs text-muted-foreground">
