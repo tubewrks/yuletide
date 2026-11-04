@@ -91,7 +91,6 @@ function DashboardPage() {
             <input
               type="password"
               required
-              autoFocus
               value={passcode}
               onChange={(e) => setPasscode(e.target.value)}
               placeholder="Passcode"
